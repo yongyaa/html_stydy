@@ -1,0 +1,4 @@
+.box1 p, .box2 p {width:200px; height:200px; border:3px solid blue; margin:0 auto;}
+.box1 p img {width:100%;}
+.box1 {background-color:aqua;}
+.box2 {background-color:yellow;}

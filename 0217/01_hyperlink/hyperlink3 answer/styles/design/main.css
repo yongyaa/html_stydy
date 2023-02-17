@@ -1,0 +1,7 @@
+/* image1 폴더 안 img1~img5 경로 순서대로 연결하기 */
+.box2 .first {background-image:url(../../images1/shop/img1.jpg)}
+.box2 .second {background-image:url(../../images1/shop/img2.png)}
+.box2 .third {background-image:url(../../images1/shop/img3.jpg)}
+.box2 .fourth {background-image:url(../../images2/img4.jpg)}
+.box2 .fifth {background-image:url(../../images2/img5.jpg)}
+.box2 .last {background-image:url(../../images2/img6.jpg)}
