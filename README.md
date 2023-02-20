@@ -58,3 +58,31 @@ dt는 여러개가될 수 없다. dt를 1개이상 쓸 경우 반드시 dd가 1�
 <br>
 <h2>23.02.17</h2>
 <p>사실 기억이 잘 나지않는다 집에가서 복습을 꼭다시 해봐야 조금 알것같다.</p>
+<br>
+<h2>23.02.20</h2>
+<table>
+  <thead>
+    <tr>
+      <th>구분</th>
+      <th>태그명</th>
+      <th>의미</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">block</td>
+      <td>&lttr&gt</td>
+      <td>가로행 태그</td>
+    </tr>
+        <tr>
+      <!--<td></td>--!>
+      <td>&lttd&gt</td>
+      <td>내용(열)태그</td>
+    </tr>
+        <tr>
+      <!--<td></td>--!>
+      <td>&ltth&gt</td>
+      <td>제목(열)태그</td>
+    </tr>
+  </tbody>
+</table>
