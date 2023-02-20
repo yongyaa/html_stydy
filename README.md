@@ -71,17 +71,17 @@ dt는 여러개가될 수 없다. dt를 1개이상 쓸 경우 반드시 dd가 1�
   <tbody>
     <tr>
       <td rowspan="3">block</td>
-      <td>&lttr&gt</td>
+      <td>&lt;tr&gt;</td>
       <td>가로행 태그</td>
     </tr>
         <tr>
       <!--<td></td>--!>
-      <td>&lttd&gt</td>
+      <td>&lt;td&gt;</td>
       <td>내용(열)태그</td>
     </tr>
         <tr>
       <!--<td></td>--!>
-      <td>&ltth&gt</td>
+      <td>&lt;th&gt;</td>
       <td>제목(열)태그</td>
     </tr>
   </tbody>
