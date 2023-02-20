@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table-01</title>
+    <style>
+        table,tr,td,th {
+            border:1px solid black
+        }
+    </style>
+</head>
+<body>
+    <h1>1행2열</h1>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+    </table>
+    <h1>2행2열</h1>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <h1>3행1열</h1>
+    <table>
+        <tr><td>1</td></tr>
+        <tr><td>2</td></tr>
+        <tr><td>3</td></tr>
+    </table>
+    <!-- tabke제작 시 th 최소 한개 필수! -->
+    <!-- table관련 태그는 모두block태그이며 테이블의 기본 테두리값은0 표를 볼때에는 행과열로 나뉘어서 보아야한다.행tr 열td 태그구성을 한때에는 table부모 tr자식td자손이다. 표의 태두리값은 table부모태그에 style을 추가하여 구성 td는p태그와 비슷한 속성을 가진다 -->
+    <h1>2행 3열</h1>
+    <table>
+        <tr>
+            <th>제1</th>
+            <th>제2</th>
+            <th>제3</th>
+        </tr>
+        <tr>
+            <td>내1</td>
+            <td>내2</td>
+            <td>내3</td>
+        </tr>
+    </table>
+    <h1>행그룹</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>책 이름</th>
+                <th>보유 수량</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+                <th>javascript</th>
+                <td>5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>HTML&CSS</th>
+                <td>2</td>
+            </tr>
+            
+            <tr>
+                <th>총 수량</th>
+                <td>7</td>
+            </tr>
+        </tfoot>
+        <!-- 모든상황에서 tfoot이 들어가는것이 아니다. thead아래 tfoot이 올수도있으며 tbody가 올수도있다. -->
+    </table>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>정의</th>
+            </tr>
+        </thead> 
+        <tbody>
+            <tr>
+                <th><span>장애인·노인 등의 정보통신 접근성 향상을 위한 권장지침</span></th>
+                <td>정보통신 제품과 서비스를 활용하고자 하는 사람에게 이의 활용 가능성이 제공되는 것</td>
+            </tr>
+            <tr>
+                <th><span>웹 접근성 이니셔티브</span>(WAI: Web Accessibility Initiative)</th>
+                <td>장애를 가진 사람들도 웹을 이용할 수 있도록 보장하는 것으로, 장애를 가진 사람들이 웹 콘텐츠를 인지하고(Perceivable), 운영하고(Operable), 이해하고(Understandable), 기술에 상관없이 이용할 수 있도록 견고한(Robust)하게 웹콘텐츠를 만드는 것</td>
+            </tr>
+            <tr>
+                <th><a href="#">Wikipedia</a></th>
+                <td>표준 브라우저 뿐만 아니라 다양한 사용자 에이전트(User Agent)를 사용하는 사람들이 웹 페이지에 접근하기 쉽게 만드는 것으로, 이를 통해 장애인들도 웹을 사용할 수 있도록 보장하는 것</td>
+            </tr>
+            <tr>
+                <th><a href="#">한국정보화진흥원</a></th>
+                <td><em>어떠한 사용자(장애인, 노인 등)</em>, 어떠한 기술환경에서도 사용자가 전문적인 능력 없이 웹 사이트에서 제공하는 모든 정보에 접근할 수 있도록 보장하는 것</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
