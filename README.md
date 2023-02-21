@@ -86,3 +86,15 @@ dt는 여러개가될 수 없다. dt를 1개이상 쓸 경우 반드시 dd가 1�
     </tr>
   </tbody>
 </table>
+<br>
+<h2>23.02.01-Form</h2>
+<form action="#" method="get">
+  <fieldset>
+    <legend>form 퀴즈</legend>
+    <span>다음 중 label for와 연관된 input 속성은</span>
+    <br>
+    <label><input type="radio" name="quiz" value="id">1. id</label><br>
+    <label><input type="radio" name="quiz" value="class">2. class</label><br>
+    <label><input type="radio" name="quiz" value="name">3. name</label>
+  </fieldset>
+</form>
