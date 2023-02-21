@@ -96,5 +96,13 @@ dt는 여러개가될 수 없다. dt를 1개이상 쓸 경우 반드시 dd가 1�
     <label><input type="radio" name="quiz" value="id">1. id</label><br>
     <label><input type="radio" name="quiz" value="class">2. class</label><br>
     <label><input type="radio" name="quiz" value="name">3. name</label>
+<span>다음중 adobe사의 프로그램이 아닌것을 고르시오</span>
+<br>
+<select name="adobe">
+<option name="adobe" value="none">프로그램</option>
+<option name="adobe" value="photo">photoshop</option>
+<option name="adobe" value="inde">indesign</option>
+<option name="adobe" value="fig">figma</option>
+</select>
   </fieldset>
 </form>
