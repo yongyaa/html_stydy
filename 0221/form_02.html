@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <hr>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>가입양식</legend>
+            <ul>
+                <li><input type="text" name="id" placeholder="아이디"></li>
+                <li><input type="password" name="pw" placeholder="비밀번호"></li>
+                <li>
+                    <span>성별:</span>
+                    <label>남<input type="radio" name="gender" value="male"></label>
+                    <label>여<input type="radio" name="gender" value="female" checked></label>
+                </li>
+                <li>
+                    <span>정보저장동의:</span>
+                    <label>동의함<input type="radio" name="agreement" value="agree" checked></label>
+                    <label>동의안함<input type="radio" name="agreement" value="disagree"></label>
+                </li>
+                <li>
+                    <span>관심사<span>(2개 이상 선택하세요)</span></span>
+                    <label>영화<input type="checkbox" name="hobby" value="movie"></label>
+                    <label>운동<input type="checkbox" name="hobby" value="exercise"></label>
+                    <label>독서<input type="checkbox" name="hobby" value="read"></label>
+                </li>
+                <li>
+                    <span>첨부파일</span>
+                    <input type="file" value="file">
+                </li>
+            </ul>
+            <div class="btn">
+                <button type="submit">가입</button>
+                <button type="reset">가입취소</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

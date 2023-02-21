@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_01</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action="#" method="post"> 
+        <fieldset>
+            <legend>회원가입양식</legend><!-- css에서 보이지않으며 숨길때 사용한다.인라인태그이지만 fieldset태그안에서 블록태그의 사용이 가능하다. -->
+            <dl>
+                <dt>아이디</dt>
+                <dd><input type="text" autofocus placeholder="아이디를 입력하세요" name="user_id" maxlength="7"></dd><!-- autofouce태그의 경우 html문서 하나당 한번만 사용할수있다. -->
+                <dt>비밀번호</dt>
+                <dd><input type="password" placeholder="비밀번호 입력하세요" name="user_pwd"></dd>
+                <dt>주민등록번호</dt>
+                <dd><input type="number" placeholder="000000" name="regist_first">-<input type="password" placeholder="*******" maxlength="7" name="regist_last"></dd><!-- number타입과 maxlength는 호환이 안되는가 -->
+                <dt>이메일</dt>
+                <dd>
+                    <input type="email" name="user_email_id">
+                    @ 
+                    <select name="mail_address">
+                        <option value="none">이메일을 선택하세요</option>
+                        <option value="google">google.com</optionews agencyn>
+                        <option value="naver">naver.com</option>
+                        <option value="kakao">kakao.com</option>
+                    </select>
+                </dd>
+                <dt>연락처</dt>
+                <dd>
+                    <select name="telecom">
+                        <option value="none">통신사</option><!-- value부분 이름을 지정할때 없는것은 none혹은 비워두어도된다. -->
+                        <option value="skt">skt</option>
+                        <option value="u+">U+</option>
+                        <option value="kt">kt</option>
+                    </select>
+                    010-<input type="number" name="phone_num_first">-<input type="number" name="phone_num_last" maxlength="4">
+                </dd>
+                <dt>비밀번호 질문 답) 나의 보물 1호는?</dt>
+                <dd><textarea name="find_pw_answer" rows="5" cols="50"></textarea></dd>
+                <dt>관심사</dt>
+                <dd>
+                    <label for="hobby_html"><input type="checkbox" id="hobby_html" value="hobby_html" name="hobby">HTML</label>
+                    <input type="checkbox" id="hobby_css"><label for="hobby_css" vlaue="hobby_css" name="hobby">CSS</label>
+                    <label><input type="checkbox">Javascript</label>
+                    <label for="psd"><input type="checkbox" id="psd">photoshop</label>
+                    <!-- label태그를 사용시 for라는 태그의 사용이 필수 단일데이터 구분은name 다일데이터 구분은 value로하고 그룹으로 name을 묶어줌 -->
+                </dd>
+                <dt>성별</dt>
+                <dd>
+                    <input type="radio" name="gender" vale="male" id="male"><label for="male">남</label>
+                    <input type="radio" name="gender" vale="female" id="female"><label for="female">여</label>
+                    <input type="radio" name="gender" vale="none" id="none"><label for="none">동의안함</label>
+                    <!-- checked를 통해서 이미 선택을 해둔 상태로 출력도 가능하다 -->
+                </dd>
+                <dt>선호하는 음료</dt>
+                <dd>
+                    <select name="hobby2">
+                        <optgroup label="커피">
+                            <option value="c1">아메리카노</option>
+                            <option value="c2">카페라떼</option>
+                        </optgroup>
+                        <optgroup label="티(tea)">
+                            <option value="t1">얼그레이티</option>
+                            <option value="t2">자스민티</option>
+                        </optgroup>
+                    </select>
+                </dd>
+            </dl>
+            <div class="btn_g">
+                <button type="reset">취소</button>
+                <button type="submit">가입</button>
+                <button type="button">범용기능</button><!-- 동적기능 벓읂 -->
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
