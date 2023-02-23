@@ -1,0 +1,17 @@
+html,body,h1,h2,h3,h4,h5,h6,
+    p,ul,ol,li,blockquote,dl,dt,dd,address,video,
+    strong,em,del,sup,sub,s,q,code,img,a,
+    table,tr,th,td,thead,tbody,tfoot,
+    form,legend,fieldset,input,label,select,option,textarea,button,
+    article,main,header,footer,section,aside,nav,figure,figcaption,
+    div,span {
+        margin:0; padding:0;
+        font-size:1.0rem;
+        font-weight:normal;
+        font-style:normal;
+        line-height:1.0;
+        list-style:none;
+    }
+    a {text-decoration:none; color:#000;}
+    table,tr,td,th {border-collapse:collapse;}
+    button {cursor:pointer; border:none; background:none;}

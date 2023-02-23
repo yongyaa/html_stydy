@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 작성연습</title>
+    <!-- css 작성 위치 -->
+    <style>
+        /* css주석 */
+        /* 1. HTML태그 꾸미는 대상 확인 */
+        /* 2. 위 태그가 가족관계에 손해있는지 확인 */
+        /* (가족관계 중 body, html은 생략가능) */
+        h1 {background-color:yellow;}
+        div.test_box {background-color:aqua;}
+        .test_box > h1 {background-color:violet;}
+        .test_box > h2 {background-color:pink;}
+        .test_box > h3 {background-color:red}
+        .test_box > h4 {background-color:skyblue;}
+        .test_box > #title1 {background-color:blanchedalmond;}
+        .test_box > #title2 {background-color:blue;}
+        .test_box > p {background-color:brown;}
+        .test_box > blockquote {background-color:lawngreen;}
+        .test_box p span {background-color:rosybrown;}
+        .test_box > span {background-color:cadetblue;}
+        .test_box > p > q {background-color:coral;}
+        .test_box p code {background-color:olive;}
+        .test_box p sub {background-color:indigo;}
+        .test_box p sup {background-color:indianred;}
+        .test_box > .test1 {background-color:burlywood;}
+        .test_box > .test2 {background-color:darkcyan;}
+        .test_box .test {border:2px solid red;}
+        /* 2개이상의 태그가 가지는 공토클래스(디자인 동시적용) */
+        .test_box .test3 {background-color: yellowgreen;}
+        .test_box .test4 {background-color: darkgoldenrod;}
+        /* 개별클래스(디자인 개별 적용) */
+        .test_box #wrap {border:2px solid magenta;}
+        .test_box #wrap p {background-color: crimson;}
+        /* 
+        block: 기본w100%, 줄바꿈, 크기를 가질 수 있다. ?????
+        inline: 내용크기만큼 너비인식, 줄바꿈X, 크기X  ?????
+        */              
+        /* ver1-------------------------------------- */
+        header {background-color: cyan;}
+        header h1 {background-color: magenta;}
+        header form {background-color: yellow;}
+        header form input {background-color: black;}
+        header a {background-color: red;}
+        /* ver2----------------- */
+        .box {background-color: red;}
+        .box a {background-color: chocolate;}
+        .box a span {background-color: green;}
+        .box .contents {background-color: gold;}
+        .box .contents p {background-color: yellowgreen;}
+        .box .img {background-color: blueviolet;}
+        .box .img img {background-color: blue;}
+        /* ver3------------- */
+        main {background-color: dodgerblue;}
+        aside h2 {background-color: darkblue;}
+        aside ul {background-color: darkcyan;}
+        aside ul li {background-color: darkgoldenrod;}
+        aside ul li a {background-color: darkgray;}
+        aside ul .last {background-color: darkgreen;}
+        aside ul .last a {background-color: darkgrey;}
+        section {background-color: darkkhaki;}
+        section .top {background-color: darkmagenta;}
+        section .top h1 {background-color: darkolivegreen;}
+        section .top p {background-color: darkorange;}
+        section article {background-color: darkorchid;}
+        section article p {background-color: darkred;}
+        /* ver4--------------------------------------------- */
+        #t {background-color: aqua;}
+        #t thead {background-color: saddlebrown;}
+        #t thead tr {background-color:aqua}
+        #t thead tr th {background-color:bisque}
+        #t tbody {background-color:burlywood}
+        #t tbody tr {background-color:blue}
+        #t tbody tr td {background-color:blueviolet}
+        #t tbody tr td span {background-color:chocolate}
+        #t tfoot {background-color:chartreuse}
+        #t tfoot tr {background-color:cadetblue}
+        #t tfoot tr th {background-color:darkseagreen}
+        #t tfoot tr td {background-color:deeppink}
+        #t tfoot tr td em {background-color:mediumspringgreen}
+        /* 인접형제선택자 */
+        .test_box #title2+p {border:5px solid black;}
+        .test_box h2+h3 {border:6px solid black;}
+        /* -----그룹선택자------ */
+        .test_box p sub,  
+        .test_box p sup {border:5px solid blue;}
+        h1,h2,h3,h4,h5,h6
+        p,em,a{
+            margin:0; padding:0;
+            font-size:1.0rem;
+            font-weight:nomal;
+            font-style:nomal;
+            line-height:1.0
+        }
+    </style>
+</head>
+<body>
+    <h1>ver0</h1>
+    <div class="test_box">
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h1 id="title1">h1-id</h1>
+        <h2 id="title2">h2-id</h2>
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+        <blockquote cite="#">blockquote</blockquote>
+        <span>span2222</span>
+        <p><span>span</span></p>
+        <p><q cite="#">q</q></p>
+        <p><code>code</code></p>
+        <p><sup>sup</sup><br><sub>sub</sub></p>
+        <div class="test1">test1-div</div>
+        <div class="test2">test2-div</div>
+        <div class="test3 test">test3-div</div>
+        <!-- 
+            test3 test사이의 공백은 앞뒤의 클래스(이름)가 다르단 뜻이다.
+            앞부분은 개별클래스 뒷부분은 공통클래스 라고한다.
+            두 태그를 동일하게 꾸미고싶다면 공통클래스를 각자 꾸미고싶다면 개별클래스를 사용한다.
+        -->
+        <div class="test4 test">test4-div</div>
+        <div id="wrap"><p>wrap-div</p></div>
+    </div>
+    <hr>
+    <h1>ver1</h1>
+    <header>
+        <h1>logo</h1>
+        <form action="#">
+            <input type="text" name="id">
+            <input type="text" name="pw">
+        </form>
+        <a href="#">lnb</a>
+    </header>
+    <hr>
+    <h1>ver2</h1>
+    <div class="box">
+        <a href="#"><span>link</span></a>
+        <div class="contents">
+            <p>contents1</p>
+            <p>contents2</p>
+            <p>contents3</p>
+        </div>
+        <div class="img"><img src="#" alt=""></div>
+    </div>
+    <hr>
+    <h1>ver3</h1>
+    <main>
+        <aside>
+            <h2>title</h2>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li class="last"><a href="#">menu4</a></li>
+            </ul>
+        </aside>
+        <section>
+            <div class="top">
+                <h1>main_title</h1>
+                <p>path</p>
+            </div>
+            <article>
+                <p>contents</p>
+            </article>
+        </section>
+    </main>
+    <hr>
+    <h1>ver4</h1>
+    <table id="t">
+        <thead>
+            <tr>
+                <th>title1</th>
+                <th>title2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>cell1</td>
+                <td><span>cell2</span></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>total</th>
+                <td><em>cell</em></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+<!-- 
+    HTML: 틀, 구조, 의미
+    CSS: HTML 디자인 역할
+    cascading(위에서 아래로 흐른다) style sheet
+    CSS 작성 시에는 HTML의 가족관계 순서대로 작성해야 한다.\
+
+    HTML문법: <태그 속성="값"> </태그>
+    CSS문법: 선택자 {속성:값; 속성:값;}
+    CSS속성 값에 "",'' 작성하는 경우는 => 값에 한글(서체), 공백이 들어갈 경우
+    선택자란? css로 디자인 하는 HTML대상
+    ex) <p>text</p> p태그에 묶인 글자를 빨강
+    p {글자:빨강;}
+-->

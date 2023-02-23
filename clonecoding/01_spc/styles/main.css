@@ -1,0 +1,46 @@
+/* header */
+header {}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+header nav {}
+header nav a {font-size:1.063em;}
+header .lnb {}
+header .lnb a {}
+/* main */
+main {}
+/* 공통배경 */
+main .bg {background-color: #f1f1f1;}
+main .bg_w {}
+/* 현재페이지경로 */
+main .bg .top {}
+main .bg .top dt {}
+main .bg .top dd {}
+main .bg .top dd span {}
+main .bg .top dd em {}
+/* 경영이념 제목 */
+main .bg_w .title {}
+main .bg_w .title h1 {font-size:2.5em;}
+main .bg_w .title p {}
+/* 경영이념 내용 */
+main .bg .contents {}
+main .bg .contents p {}
+/* 경영이념 vision */
+main .bg_w .contents {}
+main .bg_w .contents h2 {font-size:1.375em;}
+main .bg_w .contents p {}
+/* 경영이념 GOAL, STRATEGY */
+main .bg .contents h2 {}
+main .bg .contents ul {}
+main .bg .contents ul li {}
+main .bg .contents ul li h3 {}
+main .bg .contents ul li p {}
+/* footer */
+footer {}
+footer .ft_top {}
+footer .ft_top .ft_left {}
+footer .ft_top .ft_left a {}
+footer .ft_top .ft_rifht {}
+footer .ft_top .ft_rifht a {}
+footer address {}
+footer address+p {}
