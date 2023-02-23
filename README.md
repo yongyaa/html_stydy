@@ -106,3 +106,11 @@ dt는 여러개가될 수 없다. dt를 1개이상 쓸 경우 반드시 dd가 1�
 </select>
   </fieldset>
 </form>
+<br>
+<h2>23.02.23</h2>
+css
+reset.css
+font-family
+font-size
+main .first #css h1 {font-size:5em}
+main .first #css h1+p {}(1em)
