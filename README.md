@@ -114,3 +114,10 @@ font-family
 font-size
 main .first #css h1 {font-size:5em}
 main .first #css h1+p {}(1em)
+<br>
+<h2>23.02.24</h2>
+weith,heigh,margin,padding,border,font-size,color,line-height,letter-spacing,border-radius,display
+*{속성:값;}전체설정
+border:1px solid:#색;
+border-left:none; border-right:none; <- 이 방법으로 할시 전체적으로 라인을주고 원하지 않는 영역을 빼는법이며 후에 수정이 간편하고
+유지보수가 편하므로 반드시 이 방법으로 사용할 것.
