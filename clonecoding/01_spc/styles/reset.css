@@ -1,6 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
-
+*{box-sizing:border-box;}
 html,body,h1,h2,h3,h4,h5,h6,
 p,ul,ol,li,blockquote,dl,dt,dd,address,video,
 strong,em,del,sup,sub,s,q,code,img,a,
@@ -28,3 +28,4 @@ div,span {
 a {text-decoration:none; color:#000;}
 table,tr,td,th {border-collapse:collapse;}
 button {cursor:pointer; border:none; background:none;}
+.skip {display:none;}

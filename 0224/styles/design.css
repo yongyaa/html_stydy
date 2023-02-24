@@ -1,0 +1,31 @@
+.a {
+    background-color:aqua;
+    font-size:3rem;
+    display:inline-block;
+    width:300px; height:200px;
+}
+/* blick:크기를 가진다 줄바꿈이 된다
+    inline:크기를 가지지않는다 줄바꿈이 안된다
+    inline-block:크기를 가진다 줄바꿈이 안된다. */
+.b {
+    background-color:pink;
+    font-size:5rem;
+    display:inline-block;
+    width:200px; height:150px;
+}
+.box {
+    width:100px; height:100px;
+}
+.c {
+    background-color:yellow;
+}
+.d {
+    /*box-sizing:border-box; 자동으로 패딩값과 마진값을 계산해주는 기능(고정값) */
+    /* width:50px; height:80px; */
+    /* padding을 추가해도 원래 가지는 크기는 동일해야한다 */
+    background-color:skyblue;
+    padding:20px 10px 5px 10px;
+    margin:20px 10px 5px 10px;
+}
+/* margin:요소와 요소 사이 */
+/* padding: 요소와 그 안 내용 사이 */
