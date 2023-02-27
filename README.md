@@ -121,3 +121,21 @@ weith,heigh,margin,padding,border,font-size,color,line-height,letter-spacing,bor
 border:1px solid:#색;
 border-left:none; border-right:none; <- 이 방법으로 할시 전체적으로 라인을주고 원하지 않는 영역을 빼는법이며 후에 수정이 간편하고
 유지보수가 편하므로 반드시 이 방법으로 사용할 것.
+<br>
+<h2>23.02.27-float</h2>
+<div class="h">
+  <div class="a">A</div>
+  <div class="b">B</div>
+  <div class="c">C</div>
+</div>
+<h3>css</h3>
+.h {}
+.h .a {float:left;}
+.h .b {float:right;}
+.h .c {float:right;}
+이때 뷰로 보이는것은
+a     cb이다.
+float의 부유오류를 잡아주는 태그는
+overflow:hidden
+.h::after {clear:both; display:block; content:'';}
+등이있다.
