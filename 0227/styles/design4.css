@@ -1,0 +1,16 @@
+/* a태그는 css에서 inline으로 인식된다. */
+.wrap {    
+    background-color:aqua;
+    /* overflow:hidden; */
+}
+.wrap::after {clear:both; display:block; content:'';}
+.wrap a {
+    display:block; font-size:5rem;
+    width:100px; height:100px;
+    background-color:yellow;
+    border:2px solid red;
+}
+.wrap .a {float:left;}
+.wrap .b {float:left;}
+.wrap .c {float:left;}
+.wrap .d {float:right;}

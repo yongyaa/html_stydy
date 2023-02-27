@@ -1,0 +1,41 @@
+/* css3로 넘어오면서 레이아웃 관련태그가 많이 생겼지만 그 중에서 float태그는 가장 오래되었다.
+float은 블록요소의 흐름을 변경하기 위해 사용하는 레이아웃 배치css속성으로 웹 페이지에서 좌/우로 배치되는 레이아웃 제작시 사용
+html4 이전 버전부터 사용하던 레이아웃 개념으로 호환성이 높다.(위치를 설정할수있는 태그)
+float의 부유개념:float을 입력시 부모의 태그가 자식만큼 인식하여 배경컬러를 주더라도 0처리가된다. 이때 부모의 태그에 높이를 주면 이를 방지할수있다.
+float태그 사용시 부유의 개념이 유의하여 적용해야함 */
+/* css에서는 html의 태그 순서와 관계없이 css안에서 디자인을 위한 새로운 순서를 창조할수있다. */
+.wrap {
+    background-color: aqua;
+    width:500px;
+    /* 자식에 float적용 시 생기는 부모 오류해결법 */
+    /* 1. 높이강제부여 자식태그의 높이만큼의 수치를 부모태그에 입력한다. */
+    /* height:100px; */
+    /* 2. 자식높이재인식 넘친영역의 높이를 숨겨라-태그의 위치를 재인식하게 함 */
+    /* overflow:hidden; */
+}
+    /* 3. 가상자식생성 존재하지 않는 태그를 생성하는 명령어 */
+.wrap::after {clear:both; display:block; content:'';}/* content 부분은 내용속성이며 가상의 자식을 추가하는 태그이므로 content부분에 내용 추가시 다음 자식부분에 추가된다. */
+.wrap .a {
+    border:5px solid red;
+    float:left;
+}
+.wrap .b 
+{
+    border:5px solid blue;
+    float:right;
+}
+.wrap .c 
+{
+    border:5px solid green;
+    float:left;
+    /* clear:both;는 이전 형제 float 위치 제거 -> 새로운 행 선언 */
+}
+/* float적용시 모든 태그에 float를 주어야한다. */
+.wrap .a, .wrap .b, .wrap .c {
+    background-color:yellow;
+    width:100px; height:100px;
+}
+.next {
+    width:500px; height:250px;
+    background-color:gold;
+}
