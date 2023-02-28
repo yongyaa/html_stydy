@@ -55,6 +55,9 @@ main .bg_w .contents p {
     line-height:1.5;
     letter-spacing:-0.02em;
 }
+main .bg_w .contents p:nth-child(2) {
+    margin-bottom:100px;
+}
 /* 경영이념 GOAL, STRATEGY */
 main .bg .contents h2 {
     font-size:1.25rem;
@@ -64,6 +67,9 @@ main .bg .contents ul {}
 main .bg .contents .goal_list li {
     width:250px; height:250px;
     border-radius:50%;
+}
+main .bg .contents h2:nth-child(3) {
+    margin-top:100px;
 }
 main .bg .contents ul li {
     font-size:1.5rem;
@@ -80,15 +86,16 @@ main .bg .contents ul .last {background-color:#f3c300;}
 main .bg .contents ul li h3 {font-size:1.063rem;}
 main .bg .contents ul li p {}
 /* footer */
-footer {}
-footer .ft_top {}
-footer .ft_top .ft_left {}
+footer {padding:50px 0;}
+footer .ft_top {overflow:hidden;}
+footer .ft_top .ft_left {float:left;}
 footer .ft_top .ft_left a {font-weight:700;}
-footer .ft_top .ft_right {}
+footer .ft_top .ft_right {float:right;}
 footer .ft_top .ft_right a {
-    border:1px solid #aaa;
+    
+    /* border:1px solid #aaa; */
     display:inline-block;
     padding:10px 20px;
 }
-footer address {}
-footer address+p {}
+footer address {line-height:1.5;}
+footer address+p {padding-top:15px;}
