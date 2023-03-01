@@ -1,0 +1,31 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+*{box-sizing:border-box;}
+html,body,h1,h2,h3,h4,h5,h6,
+p,ul,ol,li,blockquote,dl,dt,dd,address,video,
+strong,em,del,sup,sub,s,q,code,img,a,
+table,tr,th,td,thead,tbody,tfoot,
+form,legend,fieldset,input,label,select,option,textarea,button,
+article,main,header,footer,section,aside,nav,figure,figcaption,
+div,span {
+    /* 글꼴적용방법1. 사용자 컴퓨터에 내장된 글꼴 불러오기 */
+    /* (위)주의사항: 해당글골이 접속한 사용자에게 없을
+    경우 글꼴이 임의의 다른 글꼴로 대체될 수있다. */
+    /* font-family:'맑은 고딕',sans-serif; */
+    /* font-family:'궁서체',serif; */
+    
+    /* 글꼴적용방법2. 웹 주소 글꼴을 가져오는 방법*/
+    /* font-family: 'Noto Sans KR', sans-serif; */
+
+    font-family: 'Noto Sans KR', sans-serif;
+    margin:0; padding:0;
+    font-size:1.0rem;
+    font-weight:normal;
+    font-style:normal;
+    line-height:1.0;
+    list-style:none;
+}
+a {text-decoration:none; color:#000;}
+table,tr,td,th {border-collapse:collapse;}
+button {cursor:pointer; border:none; background:none;}
+.skip {display:none;}

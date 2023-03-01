@@ -1,0 +1,48 @@
+main {
+    width:850px;
+    margin:0 auto;
+    border:1px solid #aaa;
+}
+main .top {
+    height:100px;
+    border-bottom:1px solid #aaa;
+    padding:0 25px;
+}
+main .top h1 {
+    font-size:1.25rem;
+    float:left;
+    line-height:100px;
+}
+main .top dl {float:right;}
+main .top dl .skip {
+    display:none;
+}
+main .top dl dd {
+    font-size:0.875rem;
+    line-height:100px;
+}
+main .top dl dd em {}
+main section {
+    padding:100px 25px;
+    border-top:none;
+}
+main section h2 {
+    font-size:1.063rem;
+    color:blue;
+}
+main section h2 i {margin-right:10px;}
+main section p {
+    line-height:1.5; letter-spacing:-0.02;
+}
+main section p:nth-of-type(1) {
+    font-size:1.875rem;
+    padding:40px 0;
+}
+main section p:nth-of-type(1) em {
+    font-size:1.875rem;
+    color:lime;
+}
+main section p:nth-of-type(3) {
+    padding:50px 0;
+}
+main section p em {}
