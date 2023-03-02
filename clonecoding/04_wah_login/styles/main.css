@@ -1,0 +1,81 @@
+/* 폰트 사이즈- 제목: 40,24,18 내용: 16,14,12 사용컬러: #eee #1e61a8 #ff7f50 #555 */
+/* =---------검색어 입력창--------- */
+header, main {width:1080px; margin:0 auto;}
+header {padding:20px;}
+header form {
+    width:435px;
+    border:3px solid #1e61a8;
+    background-color:#fff;
+    border-radius:5px;
+    margin:0 auto;
+}
+header form fieldset {}
+header form fieldset legend {
+    display:none;
+}
+header form fieldset input {
+    border:none; float:left;
+    width:80%;
+}
+header form fieldset button {
+    background-color:#1e61a8;
+    color:#fff;
+    width:30px; height:30px;
+    float:right;
+}
+header form fieldset button::after {
+    content:'\f002'; display:block;
+
+}
+/* ---------------회원관련 어사이드----------------- */
+main {}
+main aside {float:left; width:200px}
+main aside h2 {color:#1e61a8; font-weight:700; font-size:1.5rem; text-align:center; margin-bottom:30px;}
+main aside .menu {}
+main aside .menu a {display:block; padding:20px 0 20px 10px; border-top:1px solid #eee; font-weight:700;}
+main aside .menu a:last-child {border-bottom:1px solid #eee;}
+main aside .menu .active {background-color:#1e61a8; color:#fff;}
+/* ---------------메인 내용(로그인 현재페이지 경로부분)------------------ */
+main .container {float:right; width:848px; border:1px solid #eee;}
+main .container .title_path {overflow:hidden; background-color:#eee; border-bottom:1px solid #888; padding:20px 15px;}
+main .container .title_path h1 {float:left; font-weight:700;}
+main .container .title_path dl {float:right;}
+main .container .title_path dl .skip {display:none;}
+main .container .title_path dl dd {font-size:0.875rem;}
+main .container .title_path dl dd::before {content:'\f015'; display:inline-block; font-weight:600;}
+main .container .title_path dl dd img {}
+main .container .title_path dl dd span {font-size:0.875rem;}
+main .container .title_path dl dd span::before,
+main .container .title_path dl dd span::after {content:'\f104'; display:inline-block; font-weight:600;}
+/* --------------메인 부분(로그인창)--------------------- */
+main .container .contents {padding:20px;}
+main .container .contents .login_box {width:720px; margin:30px auto 50px; background-color:#eee; border:1px solid #888; padding:30px 0 30px 30px; background-image:url(../images/bg.png); background-repeat:no-repeat; background-position:90% 35%;} 
+main .container .contents .login_box h2,  
+main .container .contents .login_box h2 span {font-size:2.5rem; letter-spacing:-0.03rem;} 
+main .container .contents .login_box h2 span {color:#1e61a8;} 
+main .container .contents .login_box > p {color:#888; padding:20px 0;} 
+main .container .contents .login_box form {} 
+main .container .contents .login_box form fieldset {overflow:hidden;} 
+main .container .contents .login_box form fieldset legend {display:none;} 
+main .container .contents .login_box form fieldset .left {float:left;} 
+main .container .contents .login_box form fieldset .left li {} 
+main .container .contents .login_box form fieldset .left li:first-child {margin-bottom:18px;} 
+main .container .contents .login_box form fieldset .left li label {width:70px; display:inline-block;} 
+main .container .contents .login_box form fieldset .left li input {width:285px;} 
+main .container .contents .login_box form fieldset .left li #user_id {} 
+main .container .contents .login_box form fieldset .left li #user_pw {} 
+main .container .contents .login_box form fieldset p {float:left; margin-left:10px;} 
+main .container .contents .login_box form fieldset p button {width:75px; height:67px; background-color:#1e61a8; color:#fff;} 
+/* -----------------회원가입/ 아이디 비밀번호찾기-------------- */
+main .container .contents .login_box .join_search {margin:20px 0 0 70px;}
+main .container .contents .login_box .join_search a {background-color:#555; color:#fff; padding:15px 10px; display:inline-block;}
+/* ---------------패스트 메뉴 */
+main .container .contents .top_link {background-color:#eee; width:50px; height:50px; border-radius:50%; display:inline-block; text-align: center; line-height:50px; float:right; margin-bottom:20px;}
+main .container .contents .top_link::before {content:'\f106'; display:inline-block; font-weight:600;}
+/* -------------푸터 */
+main .container .contents .foot {clear:both; background-color:#eee; border:1px solid #888; padding:25px 0 25px 100px;}
+main .container .contents .foot p {line-height:1.8; letter-spacing:-0.03rem;}
+main .container .contents .foot p em {color:#ff7f50;}
+main .container .contents .foot p,
+main .container .contents .foot p em {font-size:0.875rem;}
+

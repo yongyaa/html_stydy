@@ -25,22 +25,28 @@ main .top dl dd em {}
 main section {
     padding:100px 25px;
     border-top:none;
+    /* 배경이미지 속성 */
+    background-image:url(../image/bg.png);
+    background-size:50%; /* 사이즈 순서는 w h */
+    background-repeat:no-repeat;/* 기본설정 값 repeat */
+    background-position:right top;/* 포지션 순서는 x y */
 }
 main section h2 {
     font-size:1.063rem;
-    color:blue;
+    color:navy;
 }
 main section h2 i {margin-right:10px;}
 main section p {
-    line-height:1.5; letter-spacing:-0.02;
+    line-height:1.5; letter-spacing:-0.02rem;
 }
 main section p:nth-of-type(1) {
     font-size:1.875rem;
     padding:40px 0;
+    letter-spacing:-0.02rem;
 }
 main section p:nth-of-type(1) em {
     font-size:1.875rem;
-    color:lime;
+    color:lightgreen;
 }
 main section p:nth-of-type(3) {
     padding:50px 0;

@@ -7,15 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>table_01</title>
-    <style>
-        table,tr,td,th {border:1px solid black}
-    </style>
+    <link href="./styles/reset.css" rel="stylesheet" type="text/css">
+    <link href="./styles/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <table>
+    <table id="t">
     <thead>
         <tr>
-            <th rowspan="2">image</th>
+            <th rowspan="2" class="bg"></th>
             <th colspan="4">선불요금제(국제전화)<br><span>합리적인 선불요금제에 국제전화 혜택을 더한 알뜰한 요금제!</span></th>
             <!-- <th></th>
             <th></th>
@@ -32,7 +31,7 @@
     <tbody>
         <tr>
             <th scope="row">국제 선불 300M</th>
-            <td ><em><span>40,700</span>원</em></td><!-- 숫자와 뒤에 원 단위 둘다 강조하면서 숫자에만 컬러가 다를경우 전체에 강조를주고 숫자에만 강조를 또 줄수있다. -->
+            <td ><em>40,700</em>원</td><!-- 숫자와 뒤에 원 단위 둘다 강조하면서 숫자에만 컬러가 다를경우 전체에 강조를주고 숫자에만 강조를 또 줄수있다. -->
             <td>집/이동전화 무제한(국제전화 매일 20분)</td>
             <td>기본제공</td>
             <td>300MB+3Mbps</td>
@@ -53,7 +52,7 @@
         </tr>
     </tbody>
 </table>
-<hr>
+<!-- <hr>
 <table>
     <thead>
         <tr>
@@ -109,6 +108,6 @@
             <td><a href="#">선택하기</a></td>
         </tr>
     </tbody>
-</table>
+</table> -->
 </body>
 </html>
