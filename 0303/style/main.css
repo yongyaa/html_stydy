@@ -1,0 +1,34 @@
+/* 원래의 위치를 유지하며 움직일 시에는 relative를 사용 원래위치를 유지안해도된다면 absolute */
+html,body {height:300vh;} /* vh: viewheight의 약자 화면에 보이는 스크롤의 길이단위 */
+.container {
+    width:500px; padding:30px;
+    background-color:aqua;
+    margin:50px auto 0; 
+    position:fixed; right:0; top:0;
+}
+
+.container .contents {
+    background-color:yellow;
+    padding:30px;
+}
+
+.container .contents > * {
+    border:2px solid red;
+    display:block;
+    padding:10px;
+    background-color:#fff;
+}
+
+/* position사용시 위치의 기준을 잡아준 후에 값을 입력한다.(값이0일시 단위 생략) */
+.container .contents h1 {
+    position:absolute;
+    top:0; left:0;
+}
+
+/* absolute는 부모태그에 포지션이 없을경우 바디로 인식하여 바디의 위치를 인식한다. */
+.container .contents p {
+    position:absolute;
+    bottom:0; right:0;
+}
+
+.container .contents a {}

@@ -1,0 +1,45 @@
+#wrap {background-color:aqua; padding:100px;}
+#wrap header {background-color: yellow;}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header nav {background-color: pink;}
+#wrap header nav ul {}
+#wrap header nav ul li {}
+#wrap header nav ul li a {display:inline-block; padding:5px;}
+#wrap header nav ul li:nth-child(3) {border:2px solid red;}
+#wrap header nav ul li:last-child a {border:2px solid blue;}
+#wrap header nav > ul > li:first-child > a {
+    border:2px solid green;
+    color:red;
+}
+#wrap header nav ul li:first-child .lnb li:nth-last-child(2) a {background-color:lime;}
+#wrap header nav ul li:nth-last-child(3) a {font-weight:700;}
+
+#wrap main {}
+#wrap main section {}
+#wrap main section h2 {}
+#wrap main section p {}
+#wrap main section h2:nth-of-type(2) {background-color:purple;}
+#wrap main section p:nth-last-of-type(1) {background-color:white;}
+#wrap main section p:first-of-type {color:red;}
+#wrap main section h2:last-of-type {color:yellow;}
+#wrap main section:nth-child(2) {}
+#wrap main section:nth-child(2) .item {font-size:2rem;}
+#wrap main section:last-child .item:nth-child(even) {background-color: yellow;}
+#wrap main section:last-child .item:nth-child(odd) {background-color: blue;}
+#wrap main section:last-child .item:nth-child(3n+1) {border:2px solid red;}
+
+/* 
+수열선택자2
+선택자:nth-child(n) 요소구분X 형제구분O
+선택자:nth-of-type(n) 요소,형제 구분O
+*/
+/* 
+수열선택자
+1.nth-child(n) 같은 부모 안 형제 2개 이상일 경우 구분(태그가 달라도 구분 가능)
+ex) #wrap header h1:nth-child(1) a {}
+ex) #wrap header nav ul li:nth-child(3) {}
+2. 시작,끝 수열선택자 fist-child, last-child
+
+3.목록이 많을 경우 뒤에서 세기 nth-last-child(n)
+*/

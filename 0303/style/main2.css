@@ -1,0 +1,61 @@
+.noti {
+    width:495px; background-color:aqua;
+    border:1px solid #ccc; border-radius:10px;
+    padding:25px 20px 40px 25px;
+    position:relative;
+}
+.noti h2 {
+    font-size:1.2rem; letter-spacing:-0.02rem; font-weight:700;
+    margin-bottom:30px;
+}
+.noti .more {
+    position:absolute; right:20px; top:25px;
+}
+.noti ul {
+    background-color:pink;
+    margin-left:100px;
+}
+.noti ul li {
+    padding:5px 0;
+    position:relative;
+}
+.noti ul li::after {
+    clear:both; content:''; display:inline-block;
+}
+.noti ul li::before {
+    content:'';
+    display:inline-block;
+    width:4px; height:4px;
+    background-color:black;
+    border-radius:50%;
+    position:absolute;
+    top:11px; left:-5px;    
+}
+.noti ul li a {
+    float:left;
+    background-color:lightgreen;
+    width:70%;
+    white-space:nowrap; /* 개행없이 한줄처리 하는법: 한줄처리 */
+    overflow:hidden;                            /* 정해진 크기 안에서만 보이게하라 */  
+    text-overflow:ellipsis;                     /* 외부처리를 말줄임 처리로 설정해라 */
+}
+
+.noti ul li span {
+    float:right;
+}
+footer {padding:20px;}
+footer a {margin-right:5px;}
+footer a:nth-child(3) {color:blue;}
+footer a::after {
+    width:1px;
+    height:15px;
+    background-color:red;
+    content:'';
+    display:inline-block;
+    position:relative;
+    right:-5px; top:2px;
+}
+/* footer a::after {content:'|'; padding-left:10px; display:inline; color:#ccc;} */
+/* 위 방법 단점: 글자크기보다 작거나 크게 할 수 없다.
+    (디자인다양성 부족) */
+footer a:last-child::after {content:'';}

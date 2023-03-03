@@ -1,0 +1,48 @@
+/* 속성선택자 */
+/* input[type^=pas] {background-color:aqua;} type^= 시작하는 type$= 끝나는 type*=포함하는
+input[name*=id] {background-color:coral;} 특징: 따로 이름을 부여하지않고 의미를 가진것을 선택할수있다.
+button[type$=ton] {background-color:red;} */
+body {background-color:#ebf6ff;}
+header {
+    border-bottom:1px solid #ccc;
+    padding:15px 0;
+    text-align:center;
+}
+header h1 {}
+header h1 a {
+    color:#1f8ce6;
+    font-weight:600;
+    letter-spacing:-0.02rem;
+}
+main {
+    width:350px;
+    margin:50px auto 0;
+}
+main #loginFrm {}
+main #loginFrm fieldset {}
+main #loginFrm fieldset legend {}
+main #loginFrm fieldset ul {
+    border:1px solid #ccc;
+    border-radius:10px;
+    overflow:hidden;
+}
+main #loginFrm fieldset ul li {border-top:1px solid #ccc;}
+main #loginFrm fieldset ul li:first-child {border:0;}
+main #loginFrm fieldset ul li input {}
+main #loginFrm fieldset ul li input[type=text] {}
+main #loginFrm fieldset ul li input[type=password] {}
+main #loginFrm fieldset ul li input[type=text],
+main #loginFrm fieldset ul li input[type=password] {width:350px; height:50px; padding:15px; outline:none;}
+main #loginFrm fieldset ul li:nth-child(3) {overflow:hidden; background-color:#f7fbff; padding:10px;}
+main #loginFrm fieldset ul li label {float:left}
+main #loginFrm fieldset ul li label input {}
+main #loginFrm fieldset ul li label span {font-size:0.75rem;}
+main #loginFrm fieldset ul li span {float:right;}
+main #loginFrm fieldset ul li span a {font-size:0.75rem;}
+main #loginFrm fieldset ul li span a:first-child::after {content:'|'; display:inline; padding-left:3px;}
+main #loginFrm fieldset .bottom_btn {margin:15px 0 0;}
+main #loginFrm fieldset .bottom_btn button {background-color:#1f8ce6; color:#fff; margin-bottom:5px;}
+main #loginFrm fieldset .bottom_btn a {background-color:#fff; color:#1f8ce6; text-align:center; line-height:45px;}
+main #loginFrm fieldset .bottom_btn button,
+main #loginFrm fieldset .bottom_btn a {display:block; width:350px; height:45px; border-radius:5px;}
+
