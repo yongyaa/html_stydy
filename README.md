@@ -139,3 +139,15 @@ float의 부유오류를 잡아주는 태그는
 overflow:hidden
 .h::after {clear:both; display:block; content:'';}
 등이있다.
+<br>
+<h2>23.03.04_position</h2>
+position의 속성값은 relative,absolute,fixed가 있으며
+relative는 현재의 위치를 기준으로
+absolute는 부모의 위치를 기준으로 (부모태그에 relative를 기준으로 움직이며 부모태그에 없을시 body를 기준으로한다.)
+fixed는 웹페이지에서 스크롤에 관계없이 그자리에 유지된다.
+<br>
+개행없이 한줄처리를 행하는 방법
+text-overflow (외부처리를 말줄임 처리로 설정)
+white-space (한줄로 처리하는 설정)
+overflow (정해진 크기 안에서만 보이게하는 설정)
+ex) 뉴스기사나 웹 서칭중일때 글귀 뒤에 ... 으로 표기되게 
