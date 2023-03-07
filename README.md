@@ -151,3 +151,17 @@ text-overflow (외부처리를 말줄임 처리로 설정)
 white-space (한줄로 처리하는 설정)
 overflow (정해진 크기 안에서만 보이게하는 설정)
 ex) 뉴스기사나 웹 서칭중일때 글귀 뒤에 ... 으로 표기되게 
+<br>
+<h2>23.03.07</h2>
+개행 여러줄처리법
+white-spacing:wrap;
+overflow:hidden;
+text-overflow:ellipsis;
+-webkit-line-clamp:5;
+-webkit-box-orient:vertical;
+display:-webkit-box;
+flex태그
+display:flex
+flex-flow:row nowrap;
+justify-content:space-between;  (메인축)
+align-items:center; (교차축)
