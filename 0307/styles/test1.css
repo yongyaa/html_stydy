@@ -1,0 +1,22 @@
+#wrap {
+    background:aqua;
+    border: 2px solid #cdcdcd;
+    color: red;
+    background: yellow;
+}
+#wrap header {background:gray;}
+#wrap header h1 {background:lime;}
+#wrap header h1 {background:beige;}
+#wrap header nav {background:pink;}
+#wrap header .lnb {background:yellow;}
+
+#wrap main {background:hotpink;}
+#wrap main .visual {background:lightgray;}
+#wrap main .bnr {background:purple;}
+#wrap main .bnr a {background:green;}
+
+#wrap footer {backgroud:black;}
+#wrap footer p {bacground:gray;}
+#wrap footer p em {background:yellowgreen;}
+#wrap footer p em {font-weight:600;}
+#wrap footer p em:first-child {font-weight:400;}
