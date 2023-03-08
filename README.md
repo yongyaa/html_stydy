@@ -165,3 +165,12 @@ display:flex
 flex-flow:row nowrap;
 justify-content:space-between;  (메인축)
 align-items:center; (교차축)
+<br>
+<h2>23.03.08_스프라이트 아이콘</h2>
+    <ul>
+        <li>스프라이트 이미지는 작은 아이콘 이미지를 한번에 관리하기 위해서 만드는 이미지이다.</li>
+        <li>스프라이트 이미지는 이미지태그가 아닌 css 백그라운드 이미지 선언으로 불러와야 한다.</li>
+        <li>img 태그로 삽입하는 이미지는 스스로 크기를 인식하고 px로 이미지가 표시된다.</li>
+        <li>css background-image 삽입이미지는 해당 크기만큼 화면에 표시되지 않고 배경이 처리된 요소의 크기만 일부 보이게 된다.</li>
+        <li>의미있는 스프라이트 이미지 처리 시 의미글자는 이미지가 들어간 요소안에 작성하고 text-indent로 숨긴다.</li>
+    </ul>
