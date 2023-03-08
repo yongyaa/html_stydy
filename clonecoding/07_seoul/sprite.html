@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style/reset.css" rel="stylesheet">
+    <style>
+        h1, li, p {line-height:1.8;}
+        .img {
+            /* background개별속성 */
+            /* background-color:aqua;
+            background-image:url(./image/icon_controls/css_sprites.png);
+            background-repeat:no-repeat;
+            background-position:0 -3px; */
+            
+            /* background통합속성 */
+            /* background:color image repreat position */
+            background:aqua url(./image/icon_controls/css_sprites.png) no-repeat 0 -3px;
+            
+            width:24px; height:24px;
+            text-indent:-9999px;
+        }
+        .icon {background:#ff0 url(./image/icon_controls/css_sprites.png) no-repeat; width:24px; height:24px; text-indent:-9999px; background-position-y:-10px;}
+        .next {background-position-x:-36px;}
+        .prev {background-position-x:-124px;}
+        .play {background-position-x:-80px;}
+        .pause {background-position-x:-168px;}
+        .keyboard {background-position-x:-212px; width:29px; height:16px;}
+        .top {background-position-x:-261px; width:34px; height:34px;}
+    </style>
+</head>
+<body>
+    <h1>sprite Images</h1>
+    <p><img src="./image/icon_controls/css_sprites.png" alt=""></p>
+    <p class="img">다음 페이지로 이동</p>
+    <p class="icon next">다음</p>
+    <p class="icon prev">이전</p>
+    <p class="icon play">재생</p>
+    <p class="icon pause">일시정지</p>
+    <p class="icon keyboard">키보드</p>
+    <p class="icon top">위로</p>
+    <ul>
+        <li>스프라이트 이미지는 작은 아이콘 이미지를 한번에 관리하기 위해서 만드는 이미지이다.</li>
+        <li>스프라이트 이미지는 이미지태그가 아닌 css 백그라운드 이미지 선언으로 불러와야 한다.</li>
+        <li>img 태그로 삽입하는 이미지는 스스로 크기를 인식하고 px로 이미지가 표시된다.</li>
+        <li>css background-image 삽입이미지는 해당 크기만큼 화면에 표시되지 않고 배경이 처리된 요소의 크기만 일부 보이게 된다.</li>
+        <li>의미있는 스프라이트 이미지 처리 시 의미글자는 이미지가 들어간 요소안에 작성하고 text-indent로 숨긴다.</li>
+        <li></li>
+    </ul>
+</body>
+</html>

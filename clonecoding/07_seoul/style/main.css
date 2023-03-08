@@ -1,0 +1,105 @@
+header {
+    width:1152px;
+    margin:0 auto;
+}
+header .h_top {
+    height:48px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+header .h_top .h_t_left {
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+}
+header .h_top .h_t_left h1 {}
+header .h_top .h_t_left h1 a {width:90%; display:inline-block;}
+header .h_top .h_t_left h1 a img {
+    width:100%;
+    margin-bottom:5px;
+}
+header .h_top .h_t_left nav {}
+header .h_top .h_t_left nav a {margin:0 5px;}
+header .h_top .h_t_right {}
+header .h_top .h_t_right a {
+    margin:0 5px;
+}
+header .h_top .h_t_right a::after:last-child {
+    margin:none;
+}
+header .h_btm {
+    height:119px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+header .h_btm h1 {}
+header .h_btm h1 a {}
+header .h_btm h1 a img {}
+header .h_btm #searchFrm {}
+header .h_btm #searchFrm fieldset {
+    width:300px; height:40px;
+    background-color:#fff;
+    border:3px solid #1e6cb3;
+    position:relative;
+}
+header .h_btm #searchFrm fieldset input[name$=search] {width:85%; height:100%; border:none; margin:0 5px; outline:none;}
+header .h_btm #searchFrm fieldset input[name$=search]::placeholder {color:#1e6cb3}
+header .h_btm #searchFrm fieldset #search {}
+header .h_btm #searchFrm fieldset #search img {position:absolute; top:7px;}
+header .h_btm .b_t_m_right {    
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:flex-end;
+    justify-content:flex-end;
+}
+header .h_btm .right {padding-bottom:10px;}
+header .h_btm .right .r_top {}
+header .h_btm .right .r_top #lang {background-color:#fff; border:2px solid #1e6cb3; outline:none;}
+header .h_btm .right .r_top #lang option {}
+header .h_btm .right .r_top #go {background-color: #1e6cb3; padding:7px 10px; color:#fff;}
+header .h_btm .r_btm {}
+header .h_btm .r_btm p {}
+header .h_btm .r_btm p:first-child {font-size:1.7rem; font-weight:600; margin-bottom:3px;}
+/* ----------------------main!!!!!!!!!!!!!!!!!!!!!!!!!!!!------------------------ */
+main {}
+main .bnr_wrap {
+    width:1152px; margin:0 auto; background-color:peru;
+    background-color:aqua;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:20px;
+}
+main .bnr_wrap .left {position:relative;}
+main .bnr_wrap .left .bnr {}
+main .bnr_wrap .left .bnr img {}
+main .bnr_wrap .left .close {
+    position:absolute; 
+    bottom:10px; right:10px; 
+    display:inline-block; 
+    background-color:#1e6cb3;
+    color:#fff;
+    padding:5px;
+    border-radius:3px;
+}
+main .bnr_wrap .right {
+    background-color:pink;
+    width:360px;
+}
+main .bnr_wrap .right .corona {position:relative; display:block; margin-bottom:10px;}
+main .bnr_wrap .right .corona img {}
+main .bnr_wrap .right .corona span {position:absolute; background-color:lawngreen; text-align: center; height:20px;}
+main .bnr_wrap .right .corona .date {width:135px; height:20px; top:15px; right:22px; display:inline-block;}
+main .bnr_wrap .right .corona .result {}
+main .bnr_wrap .right .corona .result1 {width:140px; top:77px; left:30px;}
+main .bnr_wrap .right .corona .result2 {width:140px; top:77px; right:30px;}
+main .bnr_wrap .right .corona .result3 {width:95px; bottom:58px; left:30px;}
+main .bnr_wrap .right .corona .result4 {width:95px; bottom:58px; right:120px;}
+main .bnr_wrap .right .corona .result5 {width:60px; bottom:58px; right:32px;}
+main .bnr_wrap .right .bnr {}
+main .bnr_wrap .right .bnr img {width:360px; height:110px;}
