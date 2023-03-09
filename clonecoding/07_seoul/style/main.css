@@ -103,3 +103,250 @@ main .bnr_wrap .right .corona .result4 {width:95px; bottom:58px; right:120px;}
 main .bnr_wrap .right .corona .result5 {width:60px; bottom:58px; right:32px;}
 main .bnr_wrap .right .bnr {}
 main .bnr_wrap .right .bnr img {width:360px; height:110px;}
+/* ------------contents!----------- */
+main .service_wrap {width:1152px; margin:0 auto;}
+main .service_wrap .title {
+    border-bottom:1px solid #333;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:flex-end;
+    padding:30px 0 10px; margin:0 0 15px;
+}
+main .service_wrap .title h1 {
+    font-size:1.5rem;
+    font-weight:500;
+}
+main .service_wrap .title .site {
+    border:1px solid #333;
+    font-size:0.875rem;
+    padding:3px 5px;
+}
+main .service_wrap .contents {
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+}
+main .service_wrap .contents a {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    width:9.09%;
+}
+main .service_wrap .contents a span {}
+main .service_wrap .contents a span:first-child {    
+    background:url(../image/icon_service/css_sprites.png) no-repeat; 
+    background-position-y:0;
+    width:60px; height:60px; 
+}
+main .service_wrap .contents a span:last-child {
+    font-size:0.875rem;
+    letter-spacing:-0.03rem;
+}
+main .service_wrap .contents a:nth-child(1) span:first-child {background-position-x:-0;}
+main .service_wrap .contents a:nth-child(2) span:first-child {background-position-x:-60px;}
+main .service_wrap .contents a:nth-child(3) span:first-child {background-position-x:-120px;}
+main .service_wrap .contents a:nth-child(4) span:first-child {background-position-x:-180px;}
+main .service_wrap .contents a:nth-child(5) span:first-child {background-position-x:-240px;}
+main .service_wrap .contents a:nth-child(6) span:first-child {background-position-x:-300px;}
+main .service_wrap .contents a:nth-child(7) span:first-child {background-position-x:-360px;}
+main .service_wrap .contents a:nth-child(8) span:first-child {background-position-x:-420px;}
+main .service_wrap .contents a:nth-child(9) span:first-child {background-position-x:-480px;}
+main .service_wrap .contents a:nth-child(10) span:first-child {background-position-x:-540px;}
+main .service_wrap .contents a:nth-child(11) span:first-child {background-position-x:-600px;}
+/* ----------------------mid_wrap---------------------------------- */
+main .back {background-color:#eff4f8;} 
+main .back .mid_wrap {
+    width:1152px; margin:30px auto 0;
+    padding:30px 0;
+}
+main .back .mid_wrap a {width:33%; display:inline-block;}
+main .back .mid_wrap a img {width:100%}
+/* ----------------------notice------------------------------ */
+main .noti {
+    width:1152px;
+    margin:30px auto 0;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+main .noti > * {width:32%;}
+main .noti span:first-child {margin-right:7px;}
+main .noti .work {color:#028ab6;}
+main .noti .envi {color:#599100;}
+main .noti .vene {color:#d76000;}
+main .noti .house {color:#c35c3c;}
+main .noti .culture {color:#9b64d3;}
+main .noti .econo {color:#069363;}
+main .noti .event {
+    background-color:pink;
+
+}
+main .noti .event .top {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #ccc;
+    padding-bottom:15px;
+    margin-bottom:15px;
+}
+main .noti .event .top > * {font-size:1.5rem;}
+main .noti .event .top h2 {}
+main .noti .event .top .button {
+    padding:0 10px;
+    border:1px solid #000;
+}
+main .noti .event ul {}
+main .noti .event ul li {
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    line-height:2rem;
+    letter-spacing:-0.02rem;
+}
+main .noti .event ul li a {}
+main .noti .event ul li a span {}
+/* ------------------------------------------------------ */
+main .noti .festi {background-color:aqua;}
+main .noti .festi .fe_top {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #ccc;
+    padding-bottom:15px;
+    margin-bottom:15px;
+}
+main .noti .festi .fe_top > * {font-size:1.5rem;}
+main .noti .festi .fe_top h2 {}
+main .noti .festi .fe_top .button {
+    padding:0 10px;
+    border:1px solid #000;
+}
+main .noti .festi ul {}
+main .noti .festi ul li {
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    line-height:2rem;
+    letter-spacing:-0.02rem;
+}
+main .noti .festi ul li a {}
+main .noti .festi ul li a span {}
+/* ------------------------------------------------------------ */
+main .noti .service {background-color:teal;}
+main .noti .service .title {padding-bottom:15px;}
+main .noti .service .title h2 {font-size:1.5rem;}
+main .noti .service ul {background-color:#eff4f8; display:flex; flex-flow:row wrap; padding:10px 10px;}
+main .noti .service ul li {
+    width:50%;    
+    line-height:2rem;
+    letter-spacing:-0.02rem;
+}
+main .noti .service ul li a {}
+main .noti .service ul li:nth-child(even) {}
+main .noti .service ul li:nth-child(odd) {}
+
+main .info {
+    width:1152px; margin:30px auto 0;
+    background-color:pink;
+}
+main .info h2 {
+    font-size:1.5rem;
+    border-bottom:1px solid #333;
+    padding:15px 0;
+    margin-bottom:15px;
+}
+main .info .icon {
+    background-color:yellowgreen;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+main .info .icon a {    
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between;
+    align-items: center;
+    width:12%;
+}
+main .info .icon a span {}
+main .info .icon a span:first-child {
+    background:url(../image/icon_set/css_sprites.png) no-repeat;
+    width:84px;
+    height:91px;
+    margin-bottom:5px;
+    background-position-y:0;
+}
+main .info .icon a span:last-child {}
+main .info .icon a:nth-child(1) span:first-child {}
+main .info .icon a:nth-child(2) span:first-child {background-position-x:-84px;}
+main .info .icon a:nth-child(3) span:first-child {background-position-x:-168px;}
+main .info .icon a:nth-child(4) span:first-child {background-position-x:-252px;}
+main .info .icon a:nth-child(5) span:first-child {background-position-x:-336px;}
+main .info .icon a:nth-child(6) span:first-child {background-position-x:-420px;}
+main .info .icon a:nth-child(7) span:first-child {background-position-x:-504px;}
+main .info .icon a:nth-child(8) span:first-child {background-position-x:-588px;}
+main .info .icon a:nth-child(even) {    background-color:peru;}
+
+main .news {
+    background-color: skyblue;
+    width:1152px;
+    margin:30px auto 0;
+}
+main .news .title {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:flex-end;
+    border-bottom:1px solid #333;
+    padding:15px 0;
+    margin-bottom:15px;
+}
+main .news .title h2 {
+    font-size:1.5rem;
+}
+main .news .title a {
+    border:1px solid #333;
+    padding:3px 10px;
+}
+main .news .contents {
+    background-color:violet;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+}
+main .news .contents a {
+    background-color:lightslategray;
+    width:23.5%;
+    overflow:hidden;
+}
+main .news .contents a span {
+    display:flex;
+    flex-flow:column nowrap;
+    margin:15px 0 20px;
+}
+main .news .contents a span img {
+    width:100%; transition:all 0.5s;
+}
+main .news .contents a span img:hover {}
+main .news .contents a span:first-child {
+    margin-bottom:20px;  height:180px; overflow:hidden;
+    position:relative;
+}
+main .news .contents a span:last-child {
+    letter-spacing:-0.02rem;
+}
+main .news .contents a:hover span img {
+    /* width 속성의 경우 -> 왼쪽상단 기준점으로 인해 우측하단으로만 이미지가 확대된다. */
+    /* width:110%;
+    position:absolute; left:50%; top:50%;
+    transform:translate(-50%,-50%); */
+    transform:scale(1.1);
+    /* css 수치갑이 변화가 일어날때 애니메이션 적용 */
+    /* ex) 100 -> 110 값변화 0 */
+    /* ex) row -> column 값변화 X */
+    transition:all 0.5s;
+}
