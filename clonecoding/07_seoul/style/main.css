@@ -1,3 +1,8 @@
+#top {
+    position:fixed;
+    right:50px; bottom:50px;
+    z-index:9999;
+}
 header {
     width:1152px;
     margin:0 auto;
@@ -350,3 +355,77 @@ main .news .contents a:hover span img {
     /* ex) row -> column 값변화 X */
     transition:all 0.5s;
 }
+footer {
+    width:1152px;
+    margin:30px auto 0;
+    background-color:aqua;
+}
+footer .top {
+    background-color:yellow;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    border:1px solid #555;
+    border-left:none; border-right:none;
+    padding:15px 0;
+}
+footer .top .menu {}
+footer .top .menu a {
+    font-size:0.91rem; letter-spacing:-0.02rem;
+    margin-left:10px;
+}
+footer .top .menu a:first-child {margin-left:0;}
+footer .top .menu a::after {
+    content:'';
+    display:inline-block;
+    background-color:#555;
+    width:1px; height:10px;
+    position:relative; right:-8px;
+}
+footer .top .menu a:last-child::after {
+    display:none;
+}
+footer .sns {}
+footer .sns a {
+    background:url(../image/icon_sns2/css_sprites_2.png) no-repeat;
+    width:25px; height:25px;
+    display:inline-block;
+    text-indent:-9999px;
+    background-position-y:0;
+}
+footer .sns a:hover {
+    background:url(../image/icon_sns2/css_sprites_1.png) no-repeat;
+}
+footer .sns a:nth-child(1) {background-position-x:0;}
+footer .sns a:nth-child(2) {background-position-x:-25px;}
+footer .sns a:nth-child(3) {background-position-x:-50px;}
+footer .sns a:nth-child(4) {background-position-x:-75px;}
+footer .sns a:nth-child(5) {background-position-x:-100px;}
+footer .sns a:nth-child(6) {background-position-x:-125px;}
+/* footer .sns a:nth-child(1):hover {background-position-x:0;}
+footer .sns a:nth-child(2):hover {background-position-x:-25px;}
+footer .sns a:nth-child(3):hover {background-position-x:-50px;}
+footer .sns a:nth-child(4):hover {background-position-x:-75px;}
+footer .sns a:nth-child(5):hover {background-position-x:-100px;}
+footer .sns a:nth-child(6):hover {background-position-x:-125px;} */
+footer .btm {
+    background-color: lawngreen;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    margin:15px 0 0;
+}
+footer .btm .copyright {
+    display:flex;
+    flex-flow:row nowrap;
+}
+footer .btm .copyright .call120 {}
+footer .btm .copyright .call120 img {width:100%;}
+footer .btm .copyright p {
+    line-height:1.5rem;
+    font-size:0.91rem;
+    letter-spacing:-0.02rem;
+}
+footer .btm .mark {}
+footer .btm .mark a {}
+footer .btm .mark a img {}
